@@ -5,9 +5,9 @@
         {{ Session::get('fail') }}
     </section>
 @endif
-@if(Session::has('success'))
+@if(Session::has('message'))
     <section class="alert alert-success">
-        {{ Session::get('success') }}
+        {{ Session::get('message') }}
     </section>
 @endif
 @if(count($errors) > 0)
